@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d7ehqgccvujc"]
+
+[ext_resource type="Script" uid="uid://b0c0bygtnehfm" path="res://projectile/projectile.gd" id="1_5sfof"]
+[ext_resource type="Texture2D" uid="uid://cd8bb1okt1kyn" path="res://icon.svg" id="2_q6vbt"]
+
+[node name="Projectile" type="Node2D"]
+position = Vector2(589, 310)
+script = ExtResource("1_5sfof")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.351563, 0.351563)
+texture = ExtResource("2_q6vbt")

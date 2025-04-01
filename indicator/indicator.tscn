@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwhi8ahuweyj5"]
+
+[ext_resource type="Shader" uid="uid://dyxa16axkocun" path="res://indicator/indicator.gdshader" id="1_jl58p"]
+[ext_resource type="Script" uid="uid://b25q7xn85xr2d" path="res://indicator/indicator_node.gd" id="2_t22vc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t22vc"]
+shader = ExtResource("1_jl58p")
+shader_parameter/size = 0.0
+shader_parameter/color = Vector3(0.1, 0.6, 0.9)
+
+[node name="Indicator" type="Node2D"]
+material = SubResource("ShaderMaterial_t22vc")
+script = ExtResource("2_t22vc")
